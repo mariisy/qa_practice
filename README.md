@@ -2,6 +2,7 @@
 
 This project automates the registration form at
 [https://qa-practice.netlify.app/bugs-form](https://qa-practice.netlify.app/bugs-form)
+And repo at [https://github.com/mariisy/qa_practice/tree/main](https://github.com/mariisy/qa_practice/tree/main)
 
 It was built for a take-home QA Automation Engineer exercise using:
 
@@ -125,16 +126,6 @@ It was built for a take-home QA Automation Engineer exercise using:
 * Framework: Playwright + Cucumber BDD for human-readable scenarios.
 * Known limitations: live site accepts invalid inputs; failing tests document those defects.
 * Reporting: HTML report generated in `reports/report.html`.
-
----
-
-## Summary
-
-| Total Scenarios | Passing | Known Bugs | Partial | Failing |
-| --------------- | ------- | ---------- | ------- | ------- |
-| 20              | 2       | 16         | 2       | 0       |
-
-Result: Positive flow passes. Multiple validation and UI logic gaps confirmed.
 
 ---
 
