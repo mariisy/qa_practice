@@ -43,8 +43,8 @@ export class qaPracticePage extends BasePage {
   /**
    * Set a single field by its human-friendly name.
    * - Terms: expects "checked" / anything else = unchecked.
-   * - Country: plain input (press Enter to accept if it's an autocomplete).
-   * - Others: fill text value.
+   * - Country: select
+   * - Other fields: fill text value.
    */
   async setField(fieldName: string, value: string | undefined) {
     const key = fieldName.toLowerCase().trim();
@@ -52,12 +52,13 @@ export class qaPracticePage extends BasePage {
 
     if (key.includes('terms') || key.includes('agree')) {
       const shouldCheck = (value ?? '').toLowerCase() === 'checked';
-      // Checkbox on the page is currently disabled; be graceful in tests.
+      //To check if checkbox is enabled and checked
       if (await locator.isEnabled()) {
         if (shouldCheck) await locator.check();
         else await locator.uncheck();
       } else {
         // Don’t fail the test here; let assertions handle final outcome.
+        // Checkbox always disabled upon checking. will skip instead of failing for test continuity
         console.warn(`WARNING "${fieldName}" checkbox is disabled; cannot toggle.`);
       }
       return;
@@ -90,7 +91,6 @@ export class qaPracticePage extends BasePage {
     }
   }
 
-  // --- submit + message utilities ---
   async submit() {
     await this.registerButton.click();
   }
@@ -100,7 +100,7 @@ export class qaPracticePage extends BasePage {
     return (text ?? '').trim();
   }
 
-  /** Success criteria used in your Then step */
+  //Success message for successful user registration. will be used for validation
   isSuccessMessage(msg: string): boolean {
     return msg.includes('Successfully registered the following information');
   }
