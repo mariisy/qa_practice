@@ -1,0 +1,2039 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;valid-inputs-allow-registration-(baseline-passes)",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Valid inputs allow registration (baseline passes)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 186036749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1006933957
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First Name",
+                      "Renzie"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "Calara"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email address",
+                      "renzie@test.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "correctPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "+639123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country",
+                      "Philippines"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Terms",
+                      "checked"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 10,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36069457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28025500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user should be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4512541
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3593583
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@happy",
+            "line": 8
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;when-multiple-fields-are-invalid,-only-the-first-error-is-shown-(password-first,-then-phone)",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "When multiple fields are invalid, only the first error is shown (password first, then phone)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 186013166
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 981651667
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "12345"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "123"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 25,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37120625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 39958458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "the message should contain \"The password should contain between [6,20] characters!\"",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5679749
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "correctPassword"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 32,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32349874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37603458
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "the message should contain \"The phone number should contain at least 10 characters!\"",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2184500
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2780291
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 23
+          },
+          {
+            "name": "@message",
+            "line": 23
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;email-is-required-but-form-accepts-blank-email",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Email is required but form accepts blank email",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49937374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 705495542
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First Name",
+                      "Renzie"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "Calara"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "correctPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "+639123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country",
+                      "Philippines"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Terms",
+                      "checked"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 40,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26813916
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 48,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24803207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3371291,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at CustomWorld.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/tests/steps/qaPractice.steps.ts:32:78)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 4369208
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 38
+          },
+          {
+            "name": "@requiredField",
+            "line": 38
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;last-name-is-required-but-form-accepts-blank-last-name",
+        "keyword": "Scenario",
+        "line": 52,
+        "name": "Last Name is required but form accepts blank last name",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 33945959
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 662196708
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First Name",
+                      "Renzie"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email address",
+                      "renzie@test.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "correctPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "+639123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country",
+                      "Philippines"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Terms",
+                      "checked"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 53,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26388124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24435875
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 3537333,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at CustomWorld.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/tests/steps/qaPractice.steps.ts:32:78)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3882250
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 51
+          },
+          {
+            "name": "@requiredField",
+            "line": 51
+          },
+          {
+            "name": "@name",
+            "line": 51
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;last-name-should-reject-invalid-characters--and-avoid-silent-truncation",
+        "keyword": "Scenario Outline",
+        "line": 81,
+        "name": "Last name should reject invalid characters  and avoid silent truncation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47142041
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1322262457
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First Name",
+                      "Renzie"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "123asds"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email address",
+                      "renzie@test.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "correctPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "+639123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country",
+                      "Philippines"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Terms",
+                      "checked"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 66,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 33975584
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37440207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2340000,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at CustomWorld.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/tests/steps/qaPractice.steps.ts:32:78)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "the message should not contain \"Successfully registered the following information\"",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:56"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3112666
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 64
+          },
+          {
+            "name": "@name",
+            "line": 64
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;last-name-should-reject-invalid-characters--and-avoid-silent-truncation",
+        "keyword": "Scenario Outline",
+        "line": 82,
+        "name": "Last name should reject invalid characters  and avoid silent truncation",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 37758499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1350855250
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First Name",
+                      "Renzie"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "123!?"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email address",
+                      "renzie@test.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "correctPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "+639123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country",
+                      "Philippines"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Terms",
+                      "checked"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 66,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25607625
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 75,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26621165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2323833,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at CustomWorld.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/tests/steps/qaPractice.steps.ts:32:78)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 77,
+            "name": "the message should not contain \"Successfully registered the following information\"",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:56"
+            },
+            "result": {
+              "status": "skipped",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3464791
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 64
+          },
+          {
+            "name": "@name",
+            "line": 64
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;first-name-should-be-constrained-but-accepts-any-value",
+        "keyword": "Scenario",
+        "line": 85,
+        "name": "First name should be constrained but accepts any value",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38047708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1144404083
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First Name",
+                      "123!?"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "Calara"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email address",
+                      "renzie@test.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "correctPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "+639123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country",
+                      "Philippines"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Terms",
+                      "checked"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 86,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30472874
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 95,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29713124
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 96,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2683040,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at CustomWorld.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/tests/steps/qaPractice.steps.ts:32:78)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2925333
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 84
+          },
+          {
+            "name": "@name",
+            "line": 84
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;email-format-should-be-validated",
+        "keyword": "Scenario",
+        "line": 99,
+        "name": "Email format should be validated",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 47548958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1199092625
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email address",
+                      "abc"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 100,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13775583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 103,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 32289791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 104,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2020625
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1998542
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 98
+          },
+          {
+            "name": "@email",
+            "line": 98
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;password-field-should-be-masked",
+        "keyword": "Scenario",
+        "line": 107,
+        "name": "Password field should be masked",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41058332
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 842209750
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 108,
+            "name": "the password field should be masked",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:45"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 5005116249,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoHaveAttribute\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator:  locator('input[id=\"password\"]')\nExpected: \u001b[32m\"password\"\u001b[39m\nReceived: \u001b[31m\"text\"\u001b[39m\nTimeout:  5000ms\n\nCall log:\n\u001b[2m  - Expect \"to.have.attribute.value\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('input[id=\"password\"]')\u001b[22m\n\u001b[2m    9 × locator resolved to <input type=\"text\" id=\"password\" name=\"password\" class=\"form-control\" placeholder=\"Password\"/>\u001b[22m\n\u001b[2m      - unexpected value \"text\"\u001b[22m\n\n    at Proxy.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at CustomWorld.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/tests/steps/qaPractice.steps.ts:47:36)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 6441124
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 106
+          },
+          {
+            "name": "@password",
+            "line": 106
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;password-length-rule-enforced-(6–20)",
+        "keyword": "Scenario Outline",
+        "line": 121,
+        "name": "Password length rule enforced (6–20)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 34920415
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1045846750
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "12345"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 112,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18595917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 115,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29233042
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 116,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2634374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 117,
+            "name": "the message should contain \"The password should contain between [6,20] characters!\"",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3677791
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2604624
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 110
+          },
+          {
+            "name": "@password",
+            "line": 110
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;password-length-rule-enforced-(6–20)",
+        "keyword": "Scenario Outline",
+        "line": 122,
+        "name": "Password length rule enforced (6–20)",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 38455291
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 796554291
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "123456789012345678901"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 112,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18600249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 115,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36620416
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 116,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5408082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 117,
+            "name": "the message should contain \"The password should contain between [6,20] characters!\"",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2325499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2508291
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 110
+          },
+          {
+            "name": "@password",
+            "line": 110
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;country-should-be-required",
+        "keyword": "Scenario",
+        "line": 125,
+        "name": "Country should be required",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39526624
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 874762834
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "First Name",
+                      "Renzie"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Last Name",
+                      "Calara"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Email address",
+                      "renzie@test.com"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Password",
+                      "correctPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "+639123456789"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Terms",
+                      "checked"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 126,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35905666
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 134,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38152125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 135,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2449375,
+              "error_message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeFalsy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mtrue\u001b[39m\n    at Proxy.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/node_modules/playwright/lib/matchers/expect.js:221:24)\n    at CustomWorld.<anonymous> (/Users/richelcalara/Desktop/pw-cucumber-ts/tests/steps/qaPractice.steps.ts:32:78)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2088166
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 124
+          },
+          {
+            "name": "@country",
+            "line": 124
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;phone-number-should-validate-format,-not-just-length",
+        "keyword": "Scenario",
+        "line": 138,
+        "name": "Phone number should validate format, not just length",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39227541
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 806932208
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "0000000000"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 139,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 20582791
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 142,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 26735499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 143,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2249916
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2019666
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 137
+          },
+          {
+            "name": "@phone",
+            "line": 137
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;phone-should-require-country-code-(+63)-for-ph-numbers",
+        "keyword": "Scenario",
+        "line": 146,
+        "name": "Phone should require country code (+63) for PH numbers",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 39142583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1444503666
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country",
+                      "Philippines"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "09123456789"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 147,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25127833
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 151,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37572125
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 152,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2704583
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2647833
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 145
+          },
+          {
+            "name": "@phone",
+            "line": 145
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;phone-should-refer-validation-to-selected-country",
+        "keyword": "Scenario",
+        "line": 156,
+        "name": "Phone should refer validation to selected country",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 41670334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1442965874
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "Field",
+                      "Value"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Country",
+                      "Philippines"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Phone number",
+                      "+11234567890"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 157,
+            "name": "user fills out the registration form:",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19043999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 161,
+            "name": "user submits the registration form",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38827374
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 162,
+            "name": "user should not be able to register",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2388458
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2186832
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 155
+          },
+          {
+            "name": "@phone",
+            "line": 155
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "registration-form-behavior-and-validation-on-qa-practice-site;terms-and-conditions-checkbox-should-be-enabled-and-required",
+        "keyword": "Scenario",
+        "line": 166,
+        "name": "Terms and Conditions checkbox should be enabled and required",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 49145249
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "user navigates to registration page",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1231326208
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 167,
+            "name": "the terms checkbox should be disabled",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12286000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 2584499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression",
+            "line": 1
+          },
+          {
+            "name": "@known-bug",
+            "line": 165
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "registration-form-behavior-and-validation-on-qa-practice-site",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Registration form behavior and validation on QA Practice site",
+    "tags": [
+      {
+        "name": "@regression",
+        "line": 1
+      }
+    ],
+    "uri": "tests/features/qaPractice.feature"
+  }
+]

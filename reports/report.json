@@ -1,0 +1,76 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "playwright-docs-homepage;verify-playwright-title",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Verify Playwright title",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 443603583
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I open the path \"/\"",
+            "match": {
+              "location": "tests/steps/qaPractice.steps.ts"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 896255958
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I should see \"Playwright\" in the page title",
+            "match": {
+              "location": "tests/steps/sample.steps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21682209
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 5440041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "playwright-docs-homepage",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Playwright docs homepage",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "tests/features/qaPractice.feature"
+  }
+]

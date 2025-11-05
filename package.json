@@ -1,0 +1,27 @@
+{
+  "name": "pw-cucumber-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js --config cucumber.js",
+    "test:headed": "HEADLESS=false SLOWMO=300 cucumber-js --config cucumber.js",
+    "test:practice": "cucumber-js --config cucumber.js --tags '@practice'",
+    "test:practice:headed": "HEADLESS=false SLOWMO=300 cucumber-js --config cucumber.js --tags '@practice'",
+    "report": "node scripts/report-html.js && open reports/cucumber-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@cucumber/cucumber": "^12.2.0",
+    "@cucumber/html-formatter": "^22.0.0",
+    "@playwright/test": "^1.56.1",
+    "@types/node": "^24.10.0",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.56.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
