@@ -43,7 +43,6 @@ It was built for a take-home QA Automation Engineer exercise using:
 
    ```bash
    npm run report
-   open reports/report.html
    ```
 
 ---
